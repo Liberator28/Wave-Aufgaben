@@ -3,8 +3,8 @@ import java.util.Scanner;
 /**
  * Aufgabe 3: Eigene Methoden
  * Taschenrechner mit den vier Grundrechenarten.
- *
- * Hinweis zu 3.1: Wenn man zwei Strings mit "+" verknüpft, werden sie
+ 
+ * WICHTIG bei 3.1: Wenn man zwei Strings mit "+" verknüpft, werden sie
  * aneinandergehängt statt addiert. "3" + "5" ergibt "35" und nicht 8.
  * Deshalb muss man die Eingabe als Zahl einlesen (nextDouble).
  */
@@ -31,6 +31,8 @@ public class Aufgabe03_Methoden {
         Scanner scanner = new Scanner(System.in);
 
         // Teil 3.1: Was passiert bei String-Addition?
+
+        
         System.out.println("--- Was passiert bei Strings? ---");
         String stringA = "3";
         String stringB = "5";
@@ -39,6 +41,7 @@ public class Aufgabe03_Methoden {
         System.out.println();
 
         // Teil 3.2 + 3.3: Taschenrechner
+        
         System.out.print("Erste Zahl eingeben: ");
         double zahl1 = scanner.nextDouble();
 
@@ -68,11 +71,13 @@ public class Aufgabe03_Methoden {
                     System.out.println("Fehler: Division durch 0 ist nicht erlaubt!");
                 } else {
                     System.out.println(zahl1 + " / " + zahl2 + " = " + dividieren(zahl1, zahl2));
+              
                 }
                 break;
             default:
                 System.out.println("Ungültige Auswahl!");
                 break;
         }
+   
     }
 }
