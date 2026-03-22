@@ -84,7 +84,7 @@ function variante5() {
     console.log("Variante 5: Nach " + wuerfe + " Würfen: " + w1 + " und " + w2 + ".");
 }
 
-// Variante 6: Interaktives Menü zur Auswahl der Varianten
+// Variante 6: Interaktives Menü Auswahl der Varianten
 
 function menue() {
     var auswahl;
