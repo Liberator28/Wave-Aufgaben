@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Aufgabe 12: Sparbuch – Zinseszins 10 Jahre berechnen
+// Aufgabe 12: Sparbuch Zinseszins 10 Jahre berechnen
 
 public class Aufgabe12_Sparbuch {
 
