@@ -1,1 +1,39 @@
+import java.util.Scanner;
 
+/*
+ * Aufgabe 5: Quadrat und Rechteck zeichnen
+ * 5.1 = festes 5x5-Quadrat
+ * 5.2 = variable Höhe und Breite
+ */
+public class Aufgabe05_Quadrat {
+
+    // Gibt ein Rechteck aus Sternchen aus
+    public static void zeichneRechteck(int hoehe, int breite) {
+        for (int zeile = 0; zeile < hoehe; zeile++) {
+            for (int spalte = 0; spalte < breite; spalte++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Teil 1: Festes Quadrat 5x5
+        System.out.println("--- Teil 1: Quadrat 5x5 ---");
+        zeichneRechteck(5, 5);
+
+        // Teil 2: Variables Rechteck
+        System.out.println("\n--- Teil 2: Variables Rechteck ---");
+
+        System.out.print("Höhe eingeben: ");
+        int hoehe = scanner.nextInt();
+
+        System.out.print("Breite eingeben: ");
+        int breite = scanner.nextInt();
+
+        zeichneRechteck(hoehe, breite);
+
+    }
+}
