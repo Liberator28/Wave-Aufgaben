@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 // Aufgabe 2: Benutzereingabe einlesen und begrüßen
+
 public class Aufgabe02_Benutzereingabe {
 
     public static void main(String[] args) {
