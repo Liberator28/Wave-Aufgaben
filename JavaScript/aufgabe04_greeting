@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #begruessung {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .anrede {
+            color: blue;
+        }
+        .vorname {
+            color: green;
+        }
+        .nachname {
+            color: red;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="begruessung">Lade Daten...</div>
+
+    <script>
+    $(document).ready(function () {
+
+        // JSON-Datei per AJAX laden (erfordert HTTP-Server, z.B. Apache)
+
+        $.getJSON("greeting.json", function (daten) {
+            var ausgabe = "Hallo " +
+                '<span class="anrede">' + daten.salutation + '</span> ' +
+                '<span class="vorname">' + daten.firstname + '</span> ' +
+                '<span class="nachname">' + daten.surname + '</span>';
+
+            $("#begruessung").html(ausgabe);
+        }).fail(function () {
+            $("#begruessung").text("Fehler beim Laden der JSON-Datei. " +
+                "Bitte über einen HTTP-Server (z.B. Apache) aufrufen.");
+        });
+    });
+    </script>
+</body>
+</html>
