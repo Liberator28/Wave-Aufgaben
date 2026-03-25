@@ -1,0 +1,7 @@
+<!-- ajax.html: Wird per AJAX in ein div geladen -->
+
+<div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-left: 3px solid #666;">
+    <p><strong>Ich bin die ajax.html!</strong> Dynamisch geladen per AJAX.</p>
+    <button class="ladeAjaxIntern">ajax.html hier nochmal laden</button>
+    <div class="internZiel"></div>
+</div>
