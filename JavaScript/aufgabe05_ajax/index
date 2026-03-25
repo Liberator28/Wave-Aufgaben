@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="UTF-8">
+    <title>AJAX Übung - Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        		}
+        #ajaxZiel, #todoContainer {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            min-height: 50px;
+        }
+        h2 {
+            color: #333;
+        }
+
+    </style>
+
+
+    <!-- jQuery und eigene Script-Datei im Head eingebunden -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>AJAX Übung</h1>
+
+    <!-- Teil a: Button lädt ajax.html -->
+
+    <h2>Teil a) AJAX laden</h2>
+    <button id="ladeAjaxBtn">ajax.html laden</button>
+    <div id="ajaxZiel"></div>
+
+    <!-- Teil b: ToDo-Liste wird automatisch beim Seitenaufruf geladen -->
+
+    <h2>Teil b) ToDo-Liste (automatisch geladen)</h2>
+    <div id="todoContainer"></div>
+</body>
+</html>
